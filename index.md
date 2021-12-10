@@ -73,6 +73,13 @@ It's a very different way of thinking about programming and that's interesting.
   rank but this can be modified by adverbs, in ways I have not yet deeply
   explored. 
 
+- `[`, `{`, `"` are not parenthesis and they do not match in pairs: they're
+  simply single-character verbs. So `1 { a` is not an unmatched brace as you
+  might think, but rather the dyadic application of `{` to `1` and `a`. 
+
+  `(` is the only grouping operator, and has its usual meaning that the
+  enclosed subexpression should be evaluated first.
+
 ## Puzzles
 
 - [Day 01](01.md)
